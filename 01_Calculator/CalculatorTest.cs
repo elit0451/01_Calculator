@@ -25,6 +25,8 @@ namespace _01_Calculator
             int[] numbers = new int[] { };
             Assert.AreEqual(0, Calculator.Sum(numbers));
 
+            numbers = new int[5];
+
             numbers[0] = 7;
             Assert.AreEqual(7, Calculator.Sum(numbers));
 
@@ -36,26 +38,28 @@ namespace _01_Calculator
         [TestMethod]
         public void Multiply()
         {
+            Assert.AreEqual(4, Calculator.Multiply(2, 2));
+
             //It multiplies two numbers
             //It multiplies several numbers
-            throw new NotImplementedException();
         }
         [TestMethod]
         public void Power()
         {
             //It raises one number to the power of another number
-            throw new NotImplementedException();
+            Assert.AreEqual(9, Calculator.Power(3,2));
         }
         [TestMethod]
         public void Factorial()
         {
+            Assert.AreEqual(120, Calculator.Factorial(5));
             //# http://en.wikipedia.org/wiki/Factorial
             //  it "computes the factorial of 0"
             //  it "computes the factorial of 1"
             //  it "computes the factorial of 2"
             //  it "computes the factorial of 5"
             //  it "computes the factorial of 10"
-            throw new NotImplementedException();
+            
         }
     }
 }
